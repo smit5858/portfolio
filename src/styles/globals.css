@@ -1,0 +1,70 @@
+/* ─── Tailwind v4 import ──────────────────────────────────────────────────────
+   @import "tailwindcss" injects:
+     - Tailwind base (Preflight) – resets browser defaults
+     - Tailwind components
+     - Tailwind utilities
+   We use the layer directive to restore browser typography defaults
+   AFTER Preflight runs, so Tailwind utility classes still work.
+────────────────────────────────────────────────────────────────────────────── */
+@import 'tailwindcss';
+
+/* ─── CSS Design Tokens ───────────────────────────────────────────────────────
+   All colours, fonts, and spacing use custom properties so they're
+   reachable from both CSS and future JS theming utilities.
+────────────────────────────────────────────────────────────────────────────── */
+:root {
+  /* Font */
+  --font-sans: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  
+}
+
+/* ─── Dark mode tokens ────────────────────────────────────────────────────────
+   Applied via the `.dark` class on <html> (Tailwind class strategy).
+────────────────────────────────────────────────────────────────────────────── */
+.dark {
+  
+  color-scheme: dark;
+}
+
+/* ─── Restore browser typography defaults ─────────────────────────────────────
+   Tailwind Preflight (CSS reset) removes browser default styles for headings,
+   paragraphs, lists, etc.  We restore them here inside a @layer base block
+   so Tailwind utility classes still take precedence when applied directly.
+────────────────────────────────────────────────────────────────────────────── */
+@layer base {
+ 
+}
+
+/* ─── Global base ─────────────────────────────────────────────────────────────*/
+html {
+ 
+}
+
+body {
+  
+}
+
+/* ─── Selection ───────────────────────────────────────────────────────────────*/
+::selection {
+  
+}
+
+::-moz-selection {
+ 
+}
+
+/* ─── Responsive images & media ───────────────────────────────────────────────*/
+img,
+video,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ─── Custom scrollbar (WebKit) ───────────────────────────────────────────────*/
+::-webkit-scrollbar              { }
+::-webkit-scrollbar-track        {  }
+::-webkit-scrollbar-thumb        {  }
+::-webkit-scrollbar-thumb:hover  {  }
